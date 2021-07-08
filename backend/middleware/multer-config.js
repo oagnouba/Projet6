@@ -19,7 +19,7 @@ const storage = multer.diskStorage({//on l'enrégistre sur le disque
 //split enlève les espaces dans les noms de fichier et join les remplace par _
     const extension = MIME_TYPES[file.mimetype];//on génère l'extension au fichier à partir du dictionnaire (minetype)
 //qui correspond au minetype du fichier envoyé par le frontend
-    callback(null, name + Date.now() + "." + extension);
+    callback(null, Date.now() + "." + extension);
   },
 });
 
