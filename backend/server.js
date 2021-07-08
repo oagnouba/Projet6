@@ -2,7 +2,7 @@
 const http = require('http');//importer le package http de node
 const app = require('./app');//appel l'application app
 
-const normalizePort = val => {//renvoie un ort valide qu'il soit d'un numéro ou d'une chaîne
+const normalizePort = val => {//renvoie un port valide qu'il soit d'un numéro ou d'une chaîne
   const port = parseInt(val, 10);
 
   if (isNaN(port)) {
@@ -46,5 +46,5 @@ server.on('listening', () => {
 });
 
 server.listen(port);
-
+/********* Fin création du serveurs **********/
 
