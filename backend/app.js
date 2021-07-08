@@ -18,10 +18,6 @@ mongoose
 
 const app = express(); //créer l'application express
 
-/*app.use((req, res) => {
-  res.json({ message: 'La quête est bien reçue!'});
-});*/
-
 /****** Eviter les erreurs CORS ******/ //Le CORS empêche l'user d'accéder à des données auxquelles il n'est pas autosiré ce n'est pas le but recherché pour l'appli
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");//on donne l'accès à tlm
